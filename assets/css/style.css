@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    background-color: #0b372dbb;
+}
+
+.logo {
+    width: 100px;
+}
+
+header {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+}
+
+.hamburger a {
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(115, 115, 115, 0.7);
+    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger .bar {
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before,
+.hamburger .bar::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before {
+    top: -4.5px;
+}
+
+.hamburger .bar::after {
+    top: 4.5px;
+}
+
+main {
+    position: absolute;
+    height: 100vh;
+    width: 207vh;
+    overflow: hidden;
+}
+
+.parallax-container {
+    visibility: hidden;
+}
+
+.parallax {
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(.2, .49, .32, .99);
+}
+
+.bg-img {
+    position: absolute;
+    width: 194.44%;
+    top: 1.86%;
+    left: 50.69%;
+    z-index: 1;
+}
+
+.fog-7 {
+    position: absolute;
+    z-index: 2;
+    width: 132%;
+    top: 37.65%;
+    left: 70.83%;
+}
+
+.mountain-10 {
+    position: absolute;
+    z-index: 3;
+    width: 78.25%;
+    top: 58.52%;
+    left: 65.97%;
+}
+
+.fog-6 {
+    position: absolute;
+    z-index: 3;
+    width: 111.85%;
+    top: 60.49%;
+    left: 50.69%;
+}
+
+.mountain-9 {
+    position: absolute;
+    z-index: 5;
+    width: 32.63%;
+    top: 63.95%;
+    left: 18.26%;
+}
+
+.mountain-8 {
+    position: absolute;
+    z-index: 3;
+    width: 56.25%;
+    top: 74.69%;
+    left: 35.97%;
+}
+
+.fog-5 {
+    position: absolute;
+    z-index: 2;
+    width: 31.25%;
+    top: 69.75%;
+    left: 51.38%;
+}
+
+.mountain-7 {
+    position: absolute;
+    z-index: 8;
+    width: 37.36%;
+    top: 65.18%;
+    left: 61.18%;
+}
+
+.mountain-6 {
+    position: absolute;
+    z-index: 10;
+    width: 28.33%;
+    top: 57.40%;
+    left: 90.97%;
+}
+
+.fog-4 {
+    position: absolute;
+    z-index: 11;
+    width: 40.97%;
+    top: 57.40%;
+    left: 54.16%;
+}
+
+.mountain-5 {
+    position: absolute;
+    z-index: 9;
+    width: 48.61%;
+    top: 71.11%;
+    left: 70.97%;
+}
+
+.fog-3 {
+    position: absolute;
+    z-index: 13;
+    width: 37.36%;
+    top: 63.58%;
+    left: 71.18%;
+}
+
+.mountain-4 {
+    position: absolute;
+    z-index: 14;
+    width: 32.22%;
+    top: 84.19%;
+    left: 20.73%;
+}
+
+.mountain-3 {
+    position: absolute;
+    z-index: 15;
+    width: 29.09%;
+    top: 66.41%;
+    left: 101.11%;
+    transform: translate(-50%, -50%);
+}
+
+.fog-2 {
+    position: absolute;
+    z-index: 4;
+    width: 111.11%;
+    top: 71.85%;
+    left: 47.92%;
+}
+
+.mountain-2 {
+    position: absolute;
+    z-index: 17;
+    width: 43.40%;
+    top: 107.03%;
+    left: 60.83%;
+}
+
+.mountain-1 {
+    position: absolute;
+    z-index: 18;
+    width: 36.80%;
+    top: 52.09%;
+    left: 1.38%;
+}
+
+.text {
+    position: absolute;
+    z-index: 11;
+    top: 43.82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+
+.text h2 {
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 0.88;
+}
+
+.text h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 0.88;
+}
+
+.sun-rays {
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 595px;
+    pointer-events: none;
+}
+
+.black-shadow {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.fog-1 {
+    position: absolute;
+    z-index: 21;
+    width: 111.11%;
+    top: 59.26%;
+    left: 50%;
+}
+
+.vignette {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.7));
+    pointer-events: none;
+}
+
+.bird {
+    position: absolute;
+    z-index: 22;
+    width: 11.11%;
+    top: 62.35%;
+    left: 29.16%;
+    transform: translate(-50%, 50%);
+}
+
+.bird2 {
+    position: absolute;
+    z-index: 22;
+    width: 11.11%;
+    top: 62.35%;
+    left: 22.22%;
+    transform: translate(-50%, 50%);
+}
+
+@media (max-width: 1100px) {
+    .text h1 {
+        font-size: 4rem;
+    }
+    .text h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 725px) {
+    .text {
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        text-transform: uppercase;
+        pointer-events: auto;
+        color: #1f1e1e;
+    }
+    .text h2 {
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 0.88;
+    }
+    .text h1 {
+        font-weight: 800;
+        font-size: 3rem;
+        line-height: 0.88;
+    }
+    .logo {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    nav li {
+        margin: 10px;
+    }
+    nav li a {
+        color: #1f1e1e;
+        font-weight: 600;
+    }
+    .hamburger {
+        display: none;
+    }
+    .bg-img {
+        width: initial;
+        height: 311.10%;
+    }
+    .fog-7 {
+        width: initial;
+        height: 211.2%;
+    }
+    .mountain-10 {
+        width: initial;
+        height: 125.2%;
+    }
+    .fog-6 {
+        width: initial;
+        height: 178.96%;
+    }
+    .mountain-9 {
+        display: none;
+    }
+    .mountain-8 {
+        width: initial;
+        height: 90%;
+    }
+    .fog-5 {
+        width: initial;
+        height: 50%;
+    }
+    .mountain-7 {
+        width: initial;
+        height: 59.78%;
+    }
+    .mountain-6 {
+        display: none;
+    }
+    .fog-4 {
+        width: initial;
+        height: 65.55%;
+    }
+    .mountain-5 {
+        width: initial;
+        height: 77.78%;
+    }
+    .fog-3 {
+        width: initial;
+        height: 59.78%;
+    }
+    .mountain-4 {
+        width: initial;
+        height: 51.55%;
+    }
+    .mountain-3 {
+        width: initial;
+        height: 96.54%;
+    }
+    .fog-2 {
+        width: initial;
+        height: 177.77%;
+    }
+    .mountain-2 {
+        width: initial;
+        height: 69.44%;
+    }
+    .mountain-1 {
+        width: initial;
+        height: 98.88%;
+    }
+    .fog-1 {
+        width: initial;
+        height: 177.78%;
+    }
+    .bird {
+        width: initial;
+        height: 17.78%;
+    }
+    .bird2 {
+        width: initial;
+        height: 17.78%;
+    }
+}
+
+@media (max-width: 525px) {
+    .text h1 {
+        font-size: 2rem;
+    }
+    .text h2 {
+        font-size: 1rem;
+    }
+}
